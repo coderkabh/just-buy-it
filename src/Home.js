@@ -1,4 +1,9 @@
 import React from 'react'
+import './Home.css'
+import Product from './Product';
+import {Link} from 'react-router-dom'
+
+const imgPath = "https://raw.githubusercontent.com/coderkabh/amazon-clone/master/src/banner.png?token=AKL6VWGMWR2QMRGORWR73ELAW57JE";
 
 function Home() {
     return (

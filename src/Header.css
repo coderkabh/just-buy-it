@@ -38,4 +38,34 @@ header {
     outline: none;
     border-radius: 8px 0 0 8px;
   }
+  .header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
   
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .header__basketCount {
+    margin: 0 10px;
+  }

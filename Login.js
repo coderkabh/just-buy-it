@@ -3,8 +3,9 @@ import './Login.css'
 import {Link, useHistory} from 'react-router-dom'
 import {auth} from './firebase.js'
 
-function Login() {
+const imgPath = "https://raw.githubusercontent.com/coderkabh/amazon-clone/master/src/just-Buy-It.png?token=AKL6VWGG5TKLMZXXYMPJ4YTAWYBAA";
 
+function Login() {
     const history = useHistory();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -29,7 +30,7 @@ function Login() {
             }
         })
         .catch(error => alert(error.message))
-
+    }
     return (
         <div className="login">
             <Link to="/">
@@ -55,5 +56,4 @@ function Login() {
         </div>
     )
 }
-
 export default Login

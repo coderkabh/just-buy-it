@@ -2,6 +2,7 @@ import React from 'react'
 import './Product.css'
 import { useStateValue } from './StateProvider';
 
+
 function Product({id, title, image, price, rating}) {
 
     const [state, dispatch ] = useStateValue();
@@ -18,7 +19,9 @@ function Product({id, title, image, price, rating}) {
                 rating: rating
             }
         })
+        
     }
+
     return (
         <div className="product">
             <div className="product__info">

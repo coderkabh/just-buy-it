@@ -1,6 +1,11 @@
 import React from 'react'
 
 function Login() {
+
+    const history = useHistory();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    
     return (
         <div className="login">
             <Link to="/">

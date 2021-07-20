@@ -1,4 +1,11 @@
 import React from 'react'
+import './Header.css';
+import SearchIcon from '@material-ui/icons/Search';
+import { ShoppingCart } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
+import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
+
 
 function Header() {
     return (

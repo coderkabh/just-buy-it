@@ -1,6 +1,10 @@
 import React from 'react'
+import CheckoutProduct from './CheckoutProduct';
+import { useStateValue } from './StateProvider';
+import Subtotal from './Subtotal';
 
 function Checkout() {
+    const [{basket, user}, dispath] = useStateValue();
     return (
         <div className="checkout">
         <div className="checkout__left">

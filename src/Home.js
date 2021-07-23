@@ -3,7 +3,7 @@ import './Home.css'
 import Product from './Product';
 import {Link} from 'react-router-dom'
 
-const imgPath = "https://raw.githubusercontent.com/coderkabh/amazon-clone/master/src/banner.png?token=AKL6VWGMWR2QMRGORWR73ELAW57JE";
+const imgPath = "https://raw.githubusercontent.com/coderkabh/just-buy-it/master/SalePoster.png";
 
 function Home() {
     return (
@@ -11,13 +11,14 @@ function Home() {
            <div className="home__container">
                <Link to="/"><img src= {imgPath} className="home__image" /></Link>
                <div className="home__row">
-                   <Product
-                    id={2110000001}
-                    title="Realme Buds Q in-Ear True Wireless Earbuds (Black)"
-                    price={1999}
-                    image = 'https://image05.realme.net/general/20200703/1593771000257.jpg'
-                    rating={3}
-                    />
+
+               <Product
+                   id={2110000002}
+                   title="Samsung Galaxy Note 20 Ultra 5G (Mystic Black, 12GB RAM, 256GB Storage) with No Cost EMI/Additional Exchange Offers"
+                   price={104999}
+                   image = 'https://images-na.ssl-images-amazon.com/images/I/81frwlzRG5L._SL1500_.jpg'
+                   rating={4}/>
+
                    <Product
                    id={2110000002}
                    title="Summerking Portable Compact Evaporator Primo air Cooler with Fan & humidifier for Your Room/Office/belongings (White)"

@@ -8,6 +8,7 @@ import { auth } from './firebase';
 
 function Header() {
     const [{basket, user}, dispatch] = useStateValue();
+    const banner = 'https://raw.githubusercontent.com/coderkabh/just-buy-it/master/JustBuyItLogo.png';
 
     const handleAuthentication = () => {
         if(user){
@@ -18,7 +19,7 @@ function Header() {
     return (
         <div className="header">
             <Link to="/">
-                <img className="header__logo" src="https://raw.githubusercontent.com/coderkabh/amazon-clone/master/src/just-Buy-It.png?token=AKL6VWGG5TKLMZXXYMPJ4YTAWYBAA"/>
+                <img className="header__logo" src={banner}/>
             </Link>
 
             <div className="header__search">

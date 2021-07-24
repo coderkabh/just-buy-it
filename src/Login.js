@@ -3,7 +3,7 @@ import './Login.css'
 import {Link, useHistory} from 'react-router-dom'
 import {auth} from './firebase.js'
 
-const imgPath = "https://raw.githubusercontent.com/coderkabh/amazon-clone/master/src/just-Buy-It.png?token=AKL6VWGG5TKLMZXXYMPJ4YTAWYBAA";
+const imgPath = "https://raw.githubusercontent.com/coderkabh/just-buy-it/master/JustBuyItLogo.png";
 
 function Login() {
     const history = useHistory();
@@ -57,3 +57,5 @@ function Login() {
     )
 }
 export default Login
+
+
